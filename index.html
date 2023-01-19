@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Solo Safari Indonesia</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Favicon -->
+    <link href="img/logosolosafari.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500&family=Quicksand:wght@600;700&display=swap" rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Spinner Start -->
+    <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+    </div>
+    <!-- Spinner End -->
+    <!-- Navbar Start -->
+    <nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top py-lg-0 px-4 px-lg-5 wow fadeIn" data-wow-delay="0.1s">
+        <a href="index.html" class="navbar-brand p-0">
+            <img class="img-fluid me-3" src="img/logosolosafari.png" alt="Icon">
+            <h1 class="m-0 text-primary">Solo Safari Indonesia</h1>
+        </a>
+        <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse py-4 py-lg-0" id="navbarCollapse">
+            <div class="navbar-nav ms-auto">
+                <a href="index.html" class="nav-item nav-link active">Home</a>
+                <div class="nav-item dropdown">
+                    <a href="#info" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Safari Info</a>
+                    <div class="dropdown-menu rounded-0 rounded-bottom m-0">
+                        <a href="#service" class="dropdown-item">Our Services</a>
+                        <a href="#animal" class="dropdown-item">Our Animal</a>
+                    </div>
+                </div>
+                <div class="nav-item dropdown">
+                    <a href="#aktivitas" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Aktivitas</a>
+                    <div class="dropdown-menu rounded-0 rounded-bottom m-0">
+                        <a href="animal.html" class="dropdown-item">Mini Zoo</a>
+                        <a href="membership.html" class="dropdown-item">Wahana</a>
+                        <a href="visiting.html" class="dropdown-item">Pertujukan</a>
+                    </div>
+                </div>
+                <a href="#news" class="nav-item nav-link">News & Artikel</a>
+                <a href="#contact" class="nav-item nav-link">Contact</a>
+            </div>
+            <a href="" class="btn btn-primary">Tiket<i class="fa fa-arrow-right ms-3"></i></a>
+        </div>
+    </nav>
+    <!-- Navbar End -->
+
+
+    <!-- Header Start -->
+    <div class="container-fluid bg-dark p-0 mb-5">
+        <div class="row g-0 flex-column-reverse flex-lg-row">
+            <div class="col-lg-6 p-0 wow fadeIn" data-wow-delay="0.1s">
+                <div class="header-bg h-100 d-flex flex-column justify-content-center p-5">
+                    <h1 class="display-4 text-light mb-5">Welcome to Solo Safari Indonesia</h1>
+                    <div class="d-flex align-items-center pt-4 animated slideInDown">
+
+                        <button type="button" class="btn-play" data-bs-toggle="modal" data-src="https://www.youtube.com/embed/d_VCZvcZJBo" data-bs-target="#videoModal">
+                            <span></span>
+                        </button>
+                        <h6 class="text-white m-0 ms-4 d-none d-sm-block">Watch Video</h6>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
+                <div class="owl-carousel header-carousel">
+                    <div class="owl-carousel-item">
+                        <img class="img-fluid" src="img/carousel-1.jpg" alt="">
+                    </div>
+                    <div class="owl-carousel-item">
+                        <img class="img-fluid" src="img/carousel-2.jpg" alt="">
+                    </div>
+                    <div class="owl-carousel-item">
+                        <img class="img-fluid" src="img/carousel-3.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Header End -->
+
+
+    <!-- Video Modal Start -->
+    <div class="modal modal-video fade" id="videoModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content rounded-0">
+                <div class="modal-header">
+                    <h3 class="modal-title" id="exampleModalLabel">Youtube Video</h3>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <!-- 16:9 aspect ratio -->
+                    <div class="ratio ratio-16x9">
+                        <iframe class="embed-responsive-item" src="" id="video" allowfullscreen allowscriptaccess="always" allow="autoplay"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Video Modal End -->
+
+
+    <!-- Harga Tiket Start -->
+    <section id="info" class="container-xxl py-5">
+        <div class="container-xxl py-5">
+            <div class="container">
+                <div class="row g-5 mb-5 align-items-end wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="col-lg-6">
+                        <p><span class="text-primary me-2">#</span>Harga Tiket</p>
+                        <h1 class="display-5 mb-0">Info Harga Tiket<span class="text-primary"> <br>Solo Safari Indonesia</span></h1>
+                    </div>
+                    <div class="col-lg-6">
+                        <p><span class="text-primary me-2">#</span>Jam Operasional</p>
+                        <h5 class="mb-3"><i class="far fa-check-circle text-primary me-3"></i>Buka setiap hari</h5>
+                        <h5 class="mb-3"><i class="far fa-check-circle text-primary me-3"></i>Pukul 08:00 - 16:00</h5>
+                    </div>
+                </div>
+                <div class="row g-4">
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="membership-item position-relative">
+                            <img class="img-fluid" src="img/animal-lg-1.jpg" alt="">
+                            <h1 class="display-1">Happy Monday</h1>
+                            <h4 class="text-white mb-3">Reguler</h4>
+                            <h3 class="text-primary mb-4">Rp. 35.000 - Dewasa</h3>
+                            <h3 class="text-primary mb-4">Rp. 35.000 - Anak</h3>
+                            <!--<p><i class="fa fa-check text-primary me-3"></i>10% discount</p>
+                        <p><i class="fa fa-check text-primary me-3"></i>2 adult and 2 child</p>
+                        <p><i class="fa fa-check text-primary me-3"></i>Free animal exhibition</p>
+                        <a class="btn btn-outline-light px-4 mt-3" href="">Get Started</a>-->
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                        <div class="membership-item position-relative">
+                            <img class="img-fluid" src="img/animal-lg-2.jpg" alt="">
+                            <h1 class="display-1">Weekdays (Tue - Fri)</h1>
+                            <h4 class="text-white mb-3">Reguler</h4>
+                            <h3 class="text-primary mb-4">Rp. 45.000 - Dewasa</h3>
+                            <h3 class="text-primary mb-4">Rp. 30.000 - Anak</h3>
+                            <h4 class="text-white mb-3">Premium</h4>
+                            <h3 class="text-primary mb-4">Rp. 60.000 - Dewasa</h3>
+                            <h3 class="text-primary mb-4">Rp. 45.000 - Anak</h3>
+                            <!--<p><i class="fa fa-check text-primary me-3"></i>15% discount</p>
+                        <p><i class="fa fa-check text-primary me-3"></i>4 adult and 4 child</p>
+                        <p><i class="fa fa-check text-primary me-3"></i>Free animal exhibition</p>
+                        <a class="btn btn-outline-light px-4 mt-3" href="">Get Started</a>-->
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                        <div class="membership-item position-relative">
+                            <img class="img-fluid" src="img/animal-lg-3.jpg" alt="">
+                            <h1 class="display-1">Weekend & Holiday</h1>
+                            <h4 class="text-white mb-3">Reguler</h4>
+                            <h3 class="text-primary mb-4">Rp. 55.000 - Dewasa</h3>
+                            <h3 class="text-primary mb-4">Rp. 40.000 - Anak</h3>
+                            <h4 class="text-white mb-3">Premium</h4>
+                            <h3 class="text-primary mb-4">Rp. 70.000 - Dewasa</h3>
+                            <h3 class="text-primary mb-4">Rp. 55.000 - Anak</h3>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <p><span class="text-primary me-2">#</span>Fasilitas for Premium</p>
+                        <h5 class="mb-3"><i class="far fa-check-circle text-primary me-3"></i>Free welcome drink</h5>
+                        <h5 class="mb-3"><i class="far fa-check-circle text-primary me-3"></i>Direct access</h5>
+                        <h5 class="mb-3"><i class="far fa-check-circle text-primary me-3"></i>Seating priority (show and indoor restaurant)</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Harga Tiket End -->
+
+    <!-- About Start -->
+    <section id="aktivitas" class="container-xxl py-5">
+        <div class="container-xxl py-5">
+            <div class="container">
+                <div class="row g-5">
+                    <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
+                        <p><span class="text-primary me-2">#</span>Welcome to Solo Safari Indonesia</p>
+                        <h1 class="display-5 mb-4">Mengapa Anda Harus Mengunjungi <span class="text-primary">Solo Safari</span> Indonesia</h1>
+                        <p class="mb-4">Rasakan pengalaman luar biasa lebih dekat dengan alam liar di Solo Safari</p>
+                        <h5 class="mb-3"><i class="far fa-check-circle text-primary me-3"></i>Free Car Parking</h5>
+                        <h5 class="mb-3"><i class="far fa-check-circle text-primary me-3"></i>Natural Environment</h5>
+                        <h5 class="mb-3"><i class="far fa-check-circle text-primary me-3"></i>Professional Guide & Security</h5>
+                        <h5 class="mb-3"><i class="far fa-check-circle text-primary me-3"></i>World Best Animals</h5>
+                        <a class="btn btn-primary py-3 px-5 mt-3" href="">Read More</a>
+                    </div>
+                    <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
+                        <div class="img-border">
+                            <img class="img-fluid" src="img/about.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- About End -->
+
+
+
+    <!-- Service Start -->
+    <section id="service" class="container-xxl py-5">
+        <div class="container-xxl py-5">
+            <div class="container">
+                <div class="row g-5 mb-5 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="col-lg-6">
+                        <p><span class="text-primary me-2">#</span>Our Services</p>
+                        <h1 class="display-5 mb-0">Special Services For <span class="text-primary">Solo Safari Indonesia</span> Visitors</h1>
+                    </div>
+
+                </div>
+                <div class="row gy-5 gx-4">
+                    <div class="col-lg-3 col-md-4 col-sm-6 wow fadeInUp" data-wow-delay="0.1s">
+                        <img class="img-fluid mb-3" src="img/icon/icon-2.png" alt="Icon">
+                        <h5 class="mb-3">Car Parking</h5>
+                        <span>Deskripsi</span>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+                        <img class="img-fluid mb-3" src="img/icon/icon-3.png" alt="Icon">
+                        <h5 class="mb-3">Animal Photos</h5>
+                        <span>Deskripsi</span>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 wow fadeInUp" data-wow-delay="0.5s">
+                        <img class="img-fluid mb-3" src="img/icon/icon-4.png" alt="Icon">
+                        <h5 class="mb-3">Guide Services</h5>
+                        <span>Deskripsi</span>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 wow fadeInUp" data-wow-delay="0.7s">
+                        <img class="img-fluid mb-3" src="img/icon/icon-5.png" alt="Icon">
+                        <h5 class="mb-3">Food & Beverages</h5>
+                        <span>Deskripsi</span>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 wow fadeInUp" data-wow-delay="0.1s">
+                        <img class="img-fluid mb-3" src="img/icon/icon-6.png" alt="Icon">
+                        <h5 class="mb-3">Zoo Shopping</h5>
+                        <span>Deskripsi</span>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+                        <img class="img-fluid mb-3" src="img/icon/icon-7.png" alt="Icon">
+                        <h5 class="mb-3">Free Hi Speed Wi-Fi</h5>
+                        <span>Deskripsi</span>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 wow fadeInUp" data-wow-delay="0.5s">
+                        <img class="img-fluid mb-3" src="img/icon/icon-8.png" alt="Icon">
+                        <h5 class="mb-3">Play Ground</h5>
+                        <span>Deskripsi</span>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 wow fadeInUp" data-wow-delay="0.7s">
+                        <img class="img-fluid mb-3" src="img/icon/icon-9.png" alt="Icon">
+                        <h5 class="mb-3">Rest House</h5>
+                        <span>Deskripsi</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Service End -->
+
+    <!-- home page block grids -->
+    <section class="w3l-text-11 py-5" id="news">
+        <div class="container py-lg-5 py-md-4 py-2">
+            <div class="row g-5 mb-5 wow fadeInUp" data-wow-delay="0.1s">
+                <div class="col-lg-6">
+                    <p><span class="text-primary me-2">#</span>News</p>
+                    <h1 class="display-5 mb-0">Recent<span class="text-primary"> News</span> & Artikel.</h1>
+                </div>
+            </div>
+            <div class="row text11-content">
+                <div class="col-md-4 item mt-lg-0">
+                    <div class="card">
+                        <div class="card-header p-0 position-relative border-0">
+                            <a href="blog-single.html">
+                                <img class="card-img-bottom d-block radius-image" src="img/b1.jpg" alt="Card image cap">
+                            </a>
+                        </div>
+                        <div class="card-body p-0 blog-details">
+                            <h6 class="mt-4">Dec 22, 2023</h6>
+                            <a href="#admin" class="admin">- by 2023 </a>
+                            <br>
+                            <a href="blog-single.html" class="blog-desc">Help make this world a fairer place for all animals.</a>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vitae voluptatum.</p>
+                            <a href="blog-single.html" class="btn btn-style btn-primary mt-lg-4 mt-4">Read More </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 item mt-lg-0 mt-5">
+                    <div class="card">
+                        <div class="card-header p-0 position-relative border-0">
+                            <a href="blog-single.html">
+                                <img class="card-img-bottom d-block radius-image" src="img/b2.jpg" alt="Card image cap">
+                            </a>
+                        </div>
+                        <div class="card-body p-0 blog-details">
+                            <h6 class="mt-4">Dec 22, 2023</h6>
+                            <a href="#admin" class="admin">- by 2023 </a>
+                            <br>
+                            <a href="blog-single.html" class="blog-desc">Help make this world a fairer place for all animals.</a>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vitae voluptatum.</p>
+                            <a href="blog-single.html" class="btn btn-style btn-primary mt-lg-4 mt-4">Read More </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 item mt-lg-0 mt-5">
+                    <div class="card">
+                        <div class="card-header p-0 position-relative border-0">
+                            <a href="blog-single.html">
+                                <img class="card-img-bottom d-block radius-image" src="img/b3.jpg" alt="Card image cap">
+                            </a>
+                        </div>
+                        <div class="card-body p-0 blog-details">
+                            <h6 class="mt-4">Dec 22, 2023</h6>
+                            <a href="#admin" class="admin">- by 2023 </a>
+                            <br>
+                            <a href="blog-single.html" class="blog-desc">Help make this world a fairer place for all animals.</a>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vitae voluptatum.</p>
+                            <a href="blog-single.html" class="btn btn-style btn-primary mt-lg-4 mt-4">Read More </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 item mt-lg-0 mt-5">
+                    <div class="card">
+                        <div class="card-header p-0 position-relative border-0">
+                            <a href="blog-single.html">
+                                <img class="card-img-bottom d-block radius-image" src="img/b3.jpg" alt="Card image cap">
+                            </a>
+                        </div>
+                        <div class="card-body p-0 blog-details">
+                            <h6 class="mt-4">Dec 22, 2023</h6>
+                            <a href="#admin" class="admin">- by 2023 </a>
+                            <br>
+                            <a href="blog-single.html" class="blog-desc">Help make this world a fairer place for all animals.</a>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vitae voluptatum.</p>
+                            <a href="blog-single.html" class="btn btn-style btn-primary mt-lg-4 mt-4">Read More </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- //home page block grids -->
+    <!-- Animal Start -->
+    <section id="animal" class="container-xxl py-5">
+        <div class="container-xxl py-5">
+            <div class="container">
+                <div class="row g-5 mb-5 align-items-end wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="col-lg-6">
+                        <p><span class="text-primary me-2">#</span>Our Animals</p>
+                        <h1 class="display-5 mb-0">Let`s See Our <span class="text-primary">Solo Safari Indonesia</span> Awsome Animals</h1>
+                    </div>
+                    <div class="col-lg-6 text-lg-end">
+                        <a class="btn btn-primary py-3 px-5" href="">Explore More Animals</a>
+                    </div>
+                </div>
+                <div class="row g-4">
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="row g-4">
+                            <div class="col-12">
+                                <a class="animal-item" href="img/animal-md-1.jpg" data-lightbox="animal">
+                                    <div class="position-relative">
+                                        <img class="img-fluid" src="img/animal-md-1.jpg" alt="">
+                                        <div class="animal-text p-4">
+                                            <p class="text-white small text-uppercase mb-0">Animal</p>
+                                            <h5 class="text-white mb-0">Elephant</h5>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-12">
+                                <a class="animal-item" href="img/animal-lg-1.jpg" data-lightbox="animal">
+                                    <div class="position-relative">
+                                        <img class="img-fluid" src="img/animal-lg-1.jpg" alt="">
+                                        <div class="animal-text p-4">
+                                            <p class="text-white small text-uppercase mb-0">Animal</p>
+                                            <h5 class="text-white mb-0">Elephant</h5>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                        <div class="row g-4">
+                            <div class="col-12">
+                                <a class="animal-item" href="img/animal-lg-2.jpg" data-lightbox="animal">
+                                    <div class="position-relative">
+                                        <img class="img-fluid" src="img/animal-lg-2.jpg" alt="">
+                                        <div class="animal-text p-4">
+                                            <p class="text-white small text-uppercase mb-0">Animal</p>
+                                            <h5 class="text-white mb-0">Elephant</h5>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-12">
+                                <a class="animal-item" href="img/animal-md-2.jpg" data-lightbox="animal">
+                                    <div class="position-relative">
+                                        <img class="img-fluid" src="img/animal-md-2.jpg" alt="">
+                                        <div class="animal-text p-4">
+                                            <p class="text-white small text-uppercase mb-0">Animal</p>
+                                            <h5 class="text-white mb-0">Elephant</h5>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                        <div class="row g-4">
+                            <div class="col-12">
+                                <a class="animal-item" href="img/animal-md-3.jpg" data-lightbox="animal">
+                                    <div class="position-relative">
+                                        <img class="img-fluid" src="img/animal-md-3.jpg" alt="">
+                                        <div class="animal-text p-4">
+                                            <p class="text-white small text-uppercase mb-0">Animal</p>
+                                            <h5 class="text-white mb-0">Elephant</h5>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-12">
+                                <a class="animal-item" href="img/animal-lg-3.jpg" data-lightbox="animal">
+                                    <div class="position-relative">
+                                        <img class="img-fluid" src="img/animal-lg-3.jpg" alt="">
+                                        <div class="animal-text p-4">
+                                            <p class="text-white small text-uppercase mb-0">Animal</p>
+                                            <h5 class="text-white mb-0">Elephant</h5>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Animal End -->
+
+
+    <!-- Visiting Hours Start -->
+    <section id="contact" class="container-xxl py-5">
+        <div class="container-xxl bg-primary visiting-hours my-5 py-5 wow fadeInUp" data-wow-delay="0.1s">
+            <div class="container py-5">
+                <div class="row g-5">
+                    <div class="col-md-6 wow fadeIn" data-wow-delay="0.3s">
+                        <h1 class="display-6 text-white mb-5">Maps</h1>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3955.0950615583124!2d110.8564533147768!3d-7.564614194544675!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7a1700f747eb7f%3A0x7c093b150e757def!2sJurug%20Solo%20Zoo!5e0!3m2!1sen!2sid!4v1673955229504!5m2!1sen!2sid"
+                                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            </li>
+
+                        </ul>
+                    </div>
+                    <div class="col-md-6 text-light wow fadeIn" data-wow-delay="0.5s">
+                        <h1 class="display-6 text-white mb-5">Contact Info</h1>
+                        <table class="table">
+                            <tbody>
+                                <tr>
+                                    <td>Office</td>
+                                    <td>Solo, Indonesia</td>
+                                </tr>
+                                <tr>
+                                    <td>Zoo</td>
+                                    <td>Solo, Indonesia</td>
+                                </tr>
+                                <tr>
+                                    <td>Ticket</td>
+                                    <td>
+                                        <p class="mb-2">+62 345 67890</p>
+                                        <p class="mb-0">ticket@example.com</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Support</td>
+                                    <td>
+                                        <p class="mb-2">+62 345 67890</p>
+                                        <p class="mb-0">support@example.com</p>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Visiting Hours End -->
+
+
+    <!-- Footer Start -->
+    <div class="container-fluid footer bg-dark text-light footer mt-5 pt-5 wow fadeIn" data-wow-delay="0.1s">
+        <div class="container py-5">
+            <div class="row g-5">
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="text-light mb-4">Address</h5>
+                    <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>Solo, Indonesia</p>
+                    <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+62 345 67890</p>
+                    <p class="mb-2"><i class="fa fa-envelope me-3"></i>info@example.com</p>
+                    <div class="d-flex pt-2">
+                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-instagram"></i></a>
+                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="text-light mb-4">Quick Links</h5>
+                    <a class="btn btn-link" href="">About Us</a>
+                    <a class="btn btn-link" href="">Contact Us</a>
+                    <a class="btn btn-link" href="">Our Services</a>
+                    <a class="btn btn-link" href="">Terms & Condition</a>
+                    <a class="btn btn-link" href="">Support</a>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="text-light mb-4">Popular Links</h5>
+                    <a class="btn btn-link" href="">S&K</a>
+                    <a class="btn btn-link" href="">FAQ</a>
+                    <a class="btn btn-link" href="">Profile Group</a>
+                    <a class="btn btn-link" href="">Tiket</a>
+                    <a class="btn btn-link" href="">Kontak</a>
+                    <a class="btn btn-link" href="">Karir</a>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <img class="img-fluid me-3" src="img/logosolosafari.ico" alt="Icon">
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="copyright">
+                <div class="row">
+                    <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                        &copy; <a class="border-bottom" href="#">Solo Safari Indonesia 2023</a>, All Right Reserved.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/lightbox/js/lightbox.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
